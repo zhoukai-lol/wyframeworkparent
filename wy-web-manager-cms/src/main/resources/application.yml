@@ -1,0 +1,17 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 30001
+spring:
+  application:
+    name: wy-web-manager-cms
+  main:
+    allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: false
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 7000
